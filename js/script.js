@@ -47,11 +47,18 @@ function crearTarjetasMb(productoMb){
 		<span><i class="fa-solid fa-sack-dollar"></i> ${producto.precio}<span>
 		<br>
 		<span>No hay unindades Disponibles  <i class="fa-regular fa-face-sad-cry"></i><span>
-		<button disabled>Agregar al Carrito</button>
+		<button>Agregar al Carrito</button>
 		`
 		
 		contenedorTjMb.appendChild(nuevoMb);
-		nuevoMb.getElementsByTagName("button")[0].addEventListener("click",()=> agregarAlCarrito(producto));
+		nuevoMb.getElementsByTagName("button")[0].addEventListener("click",()=> {
+			Swal.fire({
+				title: 'Lo sentimos!',
+				text: 'En este momento no disponemos de existencias de este producto',
+				iconHtml: '<i class="fa-solid fa-face-sad-cry"></i>',
+				confirmButtonText: 'Aceptar'
+			  })
+		});
 	})}
 
 	crearTarjetasMb(mb)
@@ -68,11 +75,18 @@ function crearTarjetasRams(productoRam){
 		<span><i class="fa-solid fa-sack-dollar"></i> ${producto.precio}<span>
 		<br>
 		<span>No hay unindades Disponibles  <i class="fa-regular fa-face-sad-cry"></i><span>
-		<button disabled>Agregar al Carrito</button>
+		<button>Agregar al Carrito</button>
 		`
 		
 		contenedorTjRams.appendChild(nuevoRam);
-		nuevoRam.getElementsByTagName("button")[0].addEventListener("click",()=> agregarAlCarrito(producto));
+		nuevoRam.getElementsByTagName("button")[0].addEventListener("click",()=>{
+			Swal.fire({
+				title: 'Lo sentimos!',
+				text: 'En este momento no disponemos de existencias de este producto',
+				iconHtml: '<i class="fa-solid fa-face-sad-cry"></i>',
+				confirmButtonText: 'Aceptar'
+			  })
+		});
 	})}
 
 	crearTarjetasRams(ram)
@@ -89,11 +103,18 @@ function crearTarjetasGpu(productoGpu){
 		<span><i class="fa-solid fa-sack-dollar"></i> ${producto.precio}<span>
 		<br>
 		<span>No hay unindades Disponibles  <i class="fa-regular fa-face-sad-cry"></i><span>
-		<button disabled>Agregar al Carrito</button>
+		<button>Agregar al Carrito</button>
 		`
 		
 		contenedorTjGpus.appendChild(nuevoGpu);
-		nuevoGpu.getElementsByTagName("button")[0].addEventListener("click",()=> agregarAlCarrito(producto));
+		nuevoGpu.getElementsByTagName("button")[0].addEventListener("click",()=> {
+			Swal.fire({
+				title: 'Lo sentimos!',
+				text: 'En este momento no disponemos de existencias de este producto',
+				iconHtml: '<i class="fa-solid fa-face-sad-cry"></i>',
+				confirmButtonText: 'Aceptar'
+			  })
+		});
 	})}
 
 	crearTarjetasGpu(gpu)
@@ -110,11 +131,18 @@ function crearTarjetasFuentes(productoFuente){
 		<span><i class="fa-solid fa-sack-dollar"></i> ${producto.precio}<span>
 		<br>
 		<span>No hay unindades Disponibles  <i class="fa-regular fa-face-sad-cry"></i><span>
-		<button disabled>Agregar al Carrito</button>
+		<button>Agregar al Carrito</button>
 		`
 		
 		contenedorTjFuentes.appendChild(nuevoFuente);
-		nuevoFuente.getElementsByTagName("button")[0].addEventListener("click",()=> agregarAlCarrito(producto));
+		nuevoFuente.getElementsByTagName("button")[0].addEventListener("click",()=> {
+			Swal.fire({
+				title: 'Lo sentimos!',
+				text: 'En este momento no disponemos de existencias de este producto',
+				iconHtml: '<i class="fa-solid fa-face-sad-cry"></i>',
+				confirmButtonText: 'Aceptar'
+			  })
+		});
 	})}
 
 	crearTarjetasFuentes(fuente)
@@ -131,11 +159,18 @@ function crearTarjetasGabinetes(productoGabinete){
 		<span><i class="fa-solid fa-sack-dollar"></i> ${producto.precio}<span>
 		<br>
 		<span>No hay unindades Disponibles  <i class="fa-regular fa-face-sad-cry"></i><span>
-		<button disabled>Agregar al Carrito</button>
+		<button>Agregar al Carrito</button>
 		`
 		
 		contenedorTjGabinetes.appendChild(nuevoGabinete);
-		nuevoGabinete.getElementsByTagName("button")[0].addEventListener("click",()=> agregarAlCarrito(producto))
+		nuevoGabinete.getElementsByTagName("button")[0].addEventListener("click",()=> {
+			Swal.fire({
+				title: 'Lo sentimos!',
+				text: 'En este momento no disponemos de existencias de este producto',
+				iconHtml: '<i class="fa-solid fa-face-sad-cry"></i>',
+				confirmButtonText: 'Aceptar'
+			  })
+		})
 	})}
 
 	crearTarjetasGabinetes(gabinete)
