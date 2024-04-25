@@ -171,7 +171,20 @@ function crearTarjetasGabinetes(productoGabinete){
 				confirmButtonText: 'Aceptar'
 			  })
 		})
-	})}
+	})};
 
-	crearTarjetasGabinetes(gabinete)
+crearTarjetasGabinetes(gabinete)
 
+
+	
+
+	const cambio = document.querySelector("#cambioMoneda")
+
+	fetch("./js/moneda.json")
+	.then(response => response.json())
+    .then(data => {
+        const producto = data[0];
+        const span = document.createElement("span");
+        span.innerText = producto.venta;
+        cambio.appendChild(span);
+    });

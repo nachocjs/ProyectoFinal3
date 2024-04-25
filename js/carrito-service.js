@@ -30,6 +30,6 @@ function actualizarNumeroCarrito(){
     const memoria = JSON.parse(localStorage.getItem("Cpu"));
     const cuentaCpu = memoria.reduce((acc, current) => acc + current.cantidad,0);
     cuentaCarritoElement.innerText = cuentaCpu;
-}
+};
 
 actualizarNumeroCarrito();

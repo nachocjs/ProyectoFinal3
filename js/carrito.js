@@ -19,3 +19,24 @@ function crearTarjetasCpu(){
 	})}
 
 	crearTarjetasCpu();
+
+	const cambio = document.querySelector("#cambioMoneda")
+
+	fetch("./js/moneda.json")
+		.then(reponse => reponse.json())
+		.then(data => {
+			data.forEach(moneda => {
+				const span = document.createElement("span")
+				span.innerText = moneda.venta
+				cambioMoneda.appendChild(span)
+			} )
+			
+		})
+
+	const vaciar = document.querySelector("#btnBorrar")
+
+	function vaciarCarrito () {
+		localStorage.removeItem("Cpu")
+	}
+
+	vaciar.addEventListener("click",vaciarCarrito)

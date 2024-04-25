@@ -19,7 +19,7 @@
     <header>
         <div class="container">
           <div class="row">
-            <div class="col-md-10">
+            <div class="col-md-8">
               <nav class="navbar">
                 <div class="container-fluid">
                   <a class="navbar-brand navUrl" href="./index.html">
@@ -29,8 +29,9 @@
                 </div>
               </nav>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4">
               <div class="imgCarrito">
+                <p class="pMoneda"><i class="fa-solid fa-comments-dollar"></i>  Tipo de cambio U$S 1 / $ <span id="cambioMoneda"></span>  </p>
                 <a href=""><i class="fa-solid fa-cart-shopping"></i> <span id="cuentaCarrito"></span></a>
               </div>
             </div>
@@ -39,10 +40,12 @@
         </div>
       </header>
       <main>
-    <div class="container">
-        <div id="contenedorCarritoCpu" ></div>
-    </div>
-   
+        <div class="container">
+          <div id="contenedorCarritoCpu" ></div>
+        </div>
+        <div class="contenedorBoton">
+          <button class="btnVaciar" id="btnBorrar">Vaciar Carrito</button>
+        </div>
       </main>
       <script src="./js/carrito.js"></script>
       <script src="./js/productos.js"></script> 

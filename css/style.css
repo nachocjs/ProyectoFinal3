@@ -117,3 +117,22 @@ header{
  .imgCarreta{
     width: 90px;
  }
+
+ .pMoneda {
+    display: inline;
+ }
+
+ .contenedorBoton{
+    display: flex;
+    padding-top: 2rem;
+ }
+
+ .btnVaciar{
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgb(192, 59, 59);
+ }

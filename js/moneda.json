@@ -1,0 +1,5 @@
+[
+    {"nombre": "Dolar", "venta": 39.65, "compra": 37.25},
+    {"nombre": "Peso Argentino", "venta": 0.20, "compra": 0.02},
+    {"nombre": "Real", "venta": 8.55, "compra": 6.85}
+]
