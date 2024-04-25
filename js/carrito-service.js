@@ -33,3 +33,13 @@ function actualizarNumeroCarrito(){
 };
 
 actualizarNumeroCarrito();
+
+const totalCarritoElement = document.getElementById("tCarrito")
+function actualizarTotalCarrito(){
+    const total = JSON.parse(localStorage.getItem("Cpu"));
+    const totalCarrito = total.reduce((acc, current) => acc + current.precio * current.cantidad,0);
+
+    totalCarritoElement.innerText = totalCarrito;
+};
+
+actualizarTotalCarrito();

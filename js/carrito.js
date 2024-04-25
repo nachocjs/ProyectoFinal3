@@ -23,15 +23,13 @@ function crearTarjetasCpu(){
 	const cambio = document.querySelector("#cambioMoneda")
 
 	fetch("./js/moneda.json")
-		.then(reponse => reponse.json())
-		.then(data => {
-			data.forEach(moneda => {
-				const span = document.createElement("span")
-				span.innerText = moneda.venta
-				cambioMoneda.appendChild(span)
-			} )
-			
-		})
+	.then(response => response.json())
+    .then(data => {
+        const producto = data[0];
+        const span = document.createElement("span");
+        span.innerText = producto.venta;
+        cambio.appendChild(span);
+    });
 
 	const vaciar = document.querySelector("#btnBorrar")
 
